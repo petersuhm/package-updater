@@ -1,0 +1,20 @@
+{
+    "name": "wppusher/package-updater",
+    "description": "Distribute WordPress packages outside the .org repository.",
+    "authors": [
+        {
+            "name": "Peter Suhm",
+            "email": "peter@wppusher.com",
+            "homepage": "https://wppusher.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "WpPusher\\Updater\\": "src"
+        }
+    }
+}
