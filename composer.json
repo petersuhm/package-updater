@@ -1,6 +1,6 @@
 {
     "name": "wppusher/package-updater",
-    "description": "Distribute WordPress packages outside the .org repository.",
+    "description": "Distribute WordPress packages outside of the .org repository.",
     "authors": [
         {
             "name": "Peter Suhm",
