@@ -24,4 +24,4 @@ $updater->enable();
 
 ## Credits
 
-This package is inspired by @bfintal's [article](http://code.tutsplus.com/tutorials/distributing-your-plugins-in-github-with-automatic-updates--wp-34817) on Tuts+.
+This package is inspired by @bfintal's [Plugin-Update](https://github.com/bfintal/Plugin-Update).
