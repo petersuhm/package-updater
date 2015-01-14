@@ -4,7 +4,7 @@ namespace WpPusher\Updater;
 
 use WpPusher\Updater\Auth\AuthProvider;
 
-class PackageUpdater
+abstract class PackageUpdater
 {
     protected $zipballUrl;
     protected $authProvider;
@@ -13,6 +13,12 @@ class PackageUpdater
     {
         $this->setZipballUrl($options['zipball_url']);
         $this->setAuthProvider($options['auth_provider']);
+
+        if ($this instanceof PluginUpdater)
+            $this->pluginFile = $options['plugin_file'];
+
+        if ($this instanceof ThemeUpdater)
+            $this->stylesheet = $options['stylesheet'];
     }
 
     public function enable()
