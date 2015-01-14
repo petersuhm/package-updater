@@ -6,6 +6,6 @@ class GitHubUpdatesProvider implements UpdatesProvider
 {
     public function setUpdateTransient($transient)
     {
-        // ...
+        return $transient;
     }
 }
