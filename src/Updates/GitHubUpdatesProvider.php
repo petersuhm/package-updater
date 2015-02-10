@@ -32,4 +32,9 @@ class GitHubUpdatesProvider implements PluginUpdatesProvider
     {
         $this->zipballUrl = $url;
     }
+
+    public function setPackageFile($file)
+    {
+        $this->plugin = $file;
+    }
 }

@@ -12,10 +12,10 @@ abstract class PackageUpdater
 
     public function config(array $options)
     {
-
         $this->setAuthProvider($options['auth_provider']);
         $this->setUpdatesProvider($options['updates_provider']);
         $this->updatesProvider->setZipballUrl($options['zipball_url']);
+        $this->updatesProvider->setPackageFile($options['file']);
     }
 
     abstract function enable();
